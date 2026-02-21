@@ -139,11 +139,17 @@ class ObservationalMemory < Formula
   end
 
   def install
-    venv = virtualenv_create(libexec, "python3.13")
+    virtualenv_create(libexec, "python3.13")
+    python = Formula["python@3.13"].opt_bin/"python3.13"
+
     resources.each do |resource|
-      venv.pip_install resource.cached_download
+      wheel = buildpath/File.basename(resource.url)
+      cp resource.cached_download, wheel
+      system python, "-m", "pip", "--python=#{libexec/"bin/python"}", "install", "--no-deps", wheel
     end
-    venv.pip_install_and_link buildpath
+
+    system python, "-m", "pip", "--python=#{libexec/"bin/python"}", "install", "--no-deps", buildpath
+    bin.install_symlink libexec/"bin/om"
   end
 
   test do
