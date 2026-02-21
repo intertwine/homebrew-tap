@@ -7,8 +7,8 @@ class ObservationalMemory < Formula
 
   desc "Cross-agent observational memory for Claude Code and Codex CLI"
   homepage "https://github.com/intertwine/observational-memory"
-  url "https://files.pythonhosted.org/packages/47/eb/6028838b6eaa63444dd4897b4e1d86c2e3ba1768262e8f4d992266b2dee0/observational_memory-0.1.1-py3-none-any.whl"
-  sha256 "8d9ae2db4c80a22999bd6411c71ca94585e6e265394e5d0cccb4418468976bbd"
+  url "https://files.pythonhosted.org/packages/8a/33/db7efdc828f8b3ab1f6326b3e8dd47629b372bb18695ddbddf1bf392334a/observational_memory-0.1.1.tar.gz"
+  sha256 "2529fc28ffd7867f54724bbe492ff14abcbed017988e1637b4b5f1cd890425b6"
   license "MIT"
 
   depends_on "jq"
@@ -139,7 +139,11 @@ class ObservationalMemory < Formula
   end
 
   def install
-    virtualenv_install_with_resources
+    venv = virtualenv_create(libexec, "python3.13")
+    resources.each do |resource|
+      venv.pip_install resource.cached_download
+    end
+    venv.pip_install_and_link buildpath
   end
 
   test do
