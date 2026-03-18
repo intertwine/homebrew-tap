@@ -7,8 +7,8 @@ class MellonaHive < Formula
 
   desc "Git-backed control plane for autonomous agent work"
   homepage "https://github.com/intertwine/hive-orchestrator"
-  url "https://files.pythonhosted.org/packages/50/80/8ecd2b25c8fb47679c9dc9bd3636d80314d21bcfadce50c5e8b7262919b5/mellona_hive-2.2.2.tar.gz"
-  sha256 "d9bba9ecc7bfb8840f4a41ee8efde0fe4580814ca28d5e289ed6f05c9fe50816"
+  url "https://files.pythonhosted.org/packages/a0/1a/7563e3ef11aee3bfc27f3238d2947468b2b71ec85f7fa6ce1d6df9065bec/mellona_hive-2.2.3.tar.gz"
+  sha256 "16eb769b3469ea67d217270d33e849dc1ce44e5f8051fe0e61e4ab64ea423580"
   license "MIT"
 
   depends_on "libyaml"
