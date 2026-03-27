@@ -7,8 +7,8 @@ class MellonaHive < Formula
 
   desc "Git-backed control plane for autonomous agent work"
   homepage "https://github.com/intertwine/hive-orchestrator"
-  url "https://files.pythonhosted.org/packages/1e/04/32d521188764230c2b55857e6078d0500311a77a8b224ea931874597a3b2/mellona_hive-2.3.1.tar.gz"
-  sha256 "73d21af7e898f394514febc7500d8139c5dc45b15389c8e5ca61f78485db5c6f"
+  url "https://files.pythonhosted.org/packages/ba/e0/d0c81dc3fa96f231a385eb69aefdc1af7484cf0a362b0e2d224b6dca6047/mellona_hive-2.3.2.tar.gz"
+  sha256 "753ed9b93716ecea4d98d48bed7f6c62765ea7202cc79cfbfdd65a7d313f8e43"
   license "MIT"
 
   depends_on "libyaml"
@@ -71,8 +71,8 @@ class MellonaHive < Formula
   end
 
   resource "requests" do
-    url "https://files.pythonhosted.org/packages/1e/db/4254e3eabe8020b458f1a747140d32277ec7a271daf1d235b70dc0b4e6e3/requests-2.32.5-py3-none-any.whl"
-    sha256 "2462f94637a34fd532264295e186976db0f5d453d1cdd31473c85a6a161affb6"
+    url "https://files.pythonhosted.org/packages/56/5d/c814546c2333ceea4ba42262d8c4d55763003e767fa169adc693bd524478/requests-2.33.0-py3-none-any.whl"
+    sha256 "3324635456fa185245e24865e810cecec7b4caf933d7eb133dcde67d48cee69b"
   end
 
   resource "trove-classifiers" do
