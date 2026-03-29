@@ -7,8 +7,8 @@ class ObservationalMemory < Formula
 
   desc "Cross-agent observational memory for Claude Code and Codex CLI"
   homepage "https://github.com/intertwine/observational-memory"
-  url "https://files.pythonhosted.org/packages/3f/2f/a62f777d8ee3be6183dac4c5d78ea5a7387496061bb498dd58c7be65f010/observational_memory-0.3.0.tar.gz"
-  sha256 "e4283d56d6026fe9e368c8d4ec2fdea9301e48086f36d3ddbd2dcccaeeb9e27e"
+  url "https://files.pythonhosted.org/packages/91/58/a72a53703435ca65b9643916462191dcee72965bb769c46ab80db6e49efa/observational_memory-0.3.1.tar.gz"
+  sha256 "f2cacc87798c2faa332017343bd7478f8a050ccd0c5ab3b6cd7cb158ceee6780"
   license "MIT"
 
   depends_on "jq"
@@ -141,8 +141,8 @@ class ObservationalMemory < Formula
   end
 
   resource "observational-memory-wheel" do
-    url "https://files.pythonhosted.org/packages/0d/13/9ae55dfffabdbc9f2c5e1e9a6d23b65344bd71c84556591e8118beff622c/observational_memory-0.3.0-py3-none-any.whl"
-    sha256 "e64d9eb6f8ef097edb9345cacafcbceb5bf2d31da481f332eac1065ef5109aab"
+    url "https://files.pythonhosted.org/packages/48/b6/f7893f377ebc99f52bf0431d87757f4b83aa1ff5a6a1da96fcd9a3d5ebe3/observational_memory-0.3.1-py3-none-any.whl"
+    sha256 "2b1cc83e886117daf43398991822644b8644bb5ee66f29545025fc41b60de73a"
   end
 
   def install
