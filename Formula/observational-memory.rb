@@ -7,8 +7,8 @@ class ObservationalMemory < Formula
 
   desc "Cross-agent observational memory for Claude Code and Codex CLI"
   homepage "https://github.com/intertwine/observational-memory"
-  url "https://files.pythonhosted.org/packages/ad/40/9f8e6c7ec89a1caf3a91f93275d3b6562ab70934201adadbfb75161b73ef/observational_memory-0.2.0.tar.gz"
-  sha256 "b31ad4d891592d673d78e300d48102b2bef33546849a3845572c949dc7f07d05"
+  url "https://files.pythonhosted.org/packages/3f/2f/a62f777d8ee3be6183dac4c5d78ea5a7387496061bb498dd58c7be65f010/observational_memory-0.3.0.tar.gz"
+  sha256 "e4283d56d6026fe9e368c8d4ec2fdea9301e48086f36d3ddbd2dcccaeeb9e27e"
   license "MIT"
 
   depends_on "jq"
@@ -21,8 +21,8 @@ class ObservationalMemory < Formula
     end
 
     resource "numpy" do
-      url "https://files.pythonhosted.org/packages/27/d9/4e7c3f0e68dfa91f21c6fb6cf839bc829ec920688b1ce7ec722b1a6202fb/numpy-2.4.3-cp313-cp313-macosx_11_0_arm64.whl"
-      sha256 "2629289168f4897a3c4e23dc98d6f1731f0fc0fe52fb9db19f974041e4cc12b9"
+      url "https://files.pythonhosted.org/packages/c1/62/2b7a48fbb745d344742c0277f01286dead15f3f68e4f359fbfcf7b48f70f/numpy-2.4.4-cp313-cp313-macosx_11_0_arm64.whl"
+      sha256 "e823b8b6edc81e747526f70f71a9c0a07ac4e7ad13020aa736bb7c9d67196115"
     end
 
     resource "pydantic-core" do
@@ -38,8 +38,8 @@ class ObservationalMemory < Formula
     end
 
     resource "numpy" do
-      url "https://files.pythonhosted.org/packages/b6/d0/1fe47a98ce0df229238b77611340aff92d52691bcbc10583303181abf7fc/numpy-2.4.3-cp313-cp313-macosx_10_13_x86_64.whl"
-      sha256 "b346845443716c8e542d54112966383b448f4a3ba5c66409771b8c0889485dd3"
+      url "https://files.pythonhosted.org/packages/14/1d/d0a583ce4fefcc3308806a749a536c201ed6b5ad6e1322e227ee4848979d/numpy-2.4.4-cp313-cp313-macosx_10_13_x86_64.whl"
+      sha256 "08f2e31ed5e6f04b118e49821397f12767934cfdd12a1ce86a058f91e004ee50"
     end
 
     resource "pydantic-core" do
@@ -106,8 +106,8 @@ class ObservationalMemory < Formula
   end
 
   resource "openai" do
-    url "https://files.pythonhosted.org/packages/d0/b1/35b6f9c8cf9318e3dbb7146cc82dab4cf61182a8d5406fc9b50864362895/openai-2.29.0-py3-none-any.whl"
-    sha256 "b7c5de513c3286d17c5e29b92c4c98ceaf0d775244ac8159aeb1bddf840eb42a"
+    url "https://files.pythonhosted.org/packages/2a/9e/5bfa2270f902d5b92ab7d41ce0475b8630572e71e349b2a4996d14bdda93/openai-2.30.0-py3-none-any.whl"
+    sha256 "9a5ae616888eb2748ec5e0c5b955a51592e0b201a11f4262db920f2a78c5231d"
   end
 
   resource "pydantic" do
@@ -141,8 +141,8 @@ class ObservationalMemory < Formula
   end
 
   resource "observational-memory-wheel" do
-    url "https://files.pythonhosted.org/packages/7a/de/f926c1e09598d506ea2bdf9ab251ce6e1ea744e80ecbf364f893b9ad813b/observational_memory-0.2.0-py3-none-any.whl"
-    sha256 "38fdbc7ad1c8f6c219a61648ba0ae575980916be41238aa94126384c5e7a4ac8"
+    url "https://files.pythonhosted.org/packages/0d/13/9ae55dfffabdbc9f2c5e1e9a6d23b65344bd71c84556591e8118beff622c/observational_memory-0.3.0-py3-none-any.whl"
+    sha256 "e64d9eb6f8ef097edb9345cacafcbceb5bf2d31da481f332eac1065ef5109aab"
   end
 
   def install
