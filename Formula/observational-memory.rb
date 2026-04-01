@@ -7,8 +7,8 @@ class ObservationalMemory < Formula
 
   desc "Cross-agent observational memory for Claude Code and Codex CLI"
   homepage "https://github.com/intertwine/observational-memory"
-  url "https://files.pythonhosted.org/packages/91/58/a72a53703435ca65b9643916462191dcee72965bb769c46ab80db6e49efa/observational_memory-0.3.1.tar.gz"
-  sha256 "f2cacc87798c2faa332017343bd7478f8a050ccd0c5ab3b6cd7cb158ceee6780"
+  url "https://files.pythonhosted.org/packages/48/b6/f7893f377ebc99f52bf0431d87757f4b83aa1ff5a6a1da96fcd9a3d5ebe3/observational_memory-0.3.1-py3-none-any.whl"
+  sha256 "2b1cc83e886117daf43398991822644b8644bb5ee66f29545025fc41b60de73a"
   license "MIT"
 
   depends_on "jq"
@@ -56,8 +56,8 @@ class ObservationalMemory < Formula
   end
 
   resource "anthropic" do
-    url "https://files.pythonhosted.org/packages/63/5f/67db29c6e5d16c8c9c4652d3efb934d89cb750cad201539141781d8eae14/anthropic-0.86.0-py3-none-any.whl"
-    sha256 "9d2bbd339446acce98858c5627d33056efe01f70435b22b63546fe7edae0cd57"
+    url "https://files.pythonhosted.org/packages/0d/02/99bf351933bdea0545a2b6e2d812ed878899e9a95f618351dfa3d0de0e69/anthropic-0.87.0-py3-none-any.whl"
+    sha256 "e2669b86d42c739d3df163f873c51719552e263a3d85179297180fb4fa00a236"
   end
 
   resource "anyio" do
@@ -140,25 +140,18 @@ class ObservationalMemory < Formula
     sha256 "4ed1cacbdc298c220f1bd249ed5287caa16f34d44ef4e9c3d0cbad5b521545e7"
   end
 
-  resource "observational-memory-wheel" do
-    url "https://files.pythonhosted.org/packages/48/b6/f7893f377ebc99f52bf0431d87757f4b83aa1ff5a6a1da96fcd9a3d5ebe3/observational_memory-0.3.1-py3-none-any.whl"
-    sha256 "2b1cc83e886117daf43398991822644b8644bb5ee66f29545025fc41b60de73a"
-  end
-
   def install
     virtualenv_create(libexec, "python3.13")
     python = Formula["python@3.13"].opt_bin/"python3.13"
 
     resources.each do |resource|
-      next if resource.name == "observational-memory-wheel"
-
       wheel = buildpath/File.basename(resource.url)
       cp resource.cached_download, wheel
       system python, "-m", "pip", "--python=#{libexec/"bin/python"}", "install", "--no-deps", wheel
     end
 
-    root_wheel = buildpath/"observational-memory-wheel.whl"
-    cp resource("observational-memory-wheel").cached_download, root_wheel
+    root_wheel = buildpath/File.basename(cached_download)
+    cp cached_download, root_wheel
     system python, "-m", "pip", "--python=#{libexec/"bin/python"}", "install", "--no-deps", root_wheel
     bin.install_symlink libexec/"bin/om"
   end
