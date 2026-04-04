@@ -5,10 +5,10 @@
 class ObservationalMemory < Formula
   include Language::Python::Virtualenv
 
-  desc "Cross-agent observational memory for Claude Code and Codex CLI"
+  desc "Cross-agent observational memory for Claude Code, Codex CLI, and Hermes Agent"
   homepage "https://github.com/intertwine/observational-memory"
-  url "https://files.pythonhosted.org/packages/91/58/a72a53703435ca65b9643916462191dcee72965bb769c46ab80db6e49efa/observational_memory-0.3.1.tar.gz"
-  sha256 "f2cacc87798c2faa332017343bd7478f8a050ccd0c5ab3b6cd7cb158ceee6780"
+  url "https://files.pythonhosted.org/packages/b7/d9/1147e7aa082c970652861586906d434f83fa7c0889d635243029d0b3dd08/observational_memory-0.4.0.tar.gz"
+  sha256 "420e83a68d870d3860eeea466db68ee423c97e4866dd7ffeac3f5a9f58d2b503"
   license "MIT"
 
   depends_on "jq"
@@ -56,8 +56,8 @@ class ObservationalMemory < Formula
   end
 
   resource "anthropic" do
-    url "https://files.pythonhosted.org/packages/0d/02/99bf351933bdea0545a2b6e2d812ed878899e9a95f618351dfa3d0de0e69/anthropic-0.87.0-py3-none-any.whl"
-    sha256 "e2669b86d42c739d3df163f873c51719552e263a3d85179297180fb4fa00a236"
+    url "https://files.pythonhosted.org/packages/22/ba/9f973f22abb512d5d17428a76e4ecbc8d49b9dd1b5a1152576d48c24dc1d/anthropic-0.89.0-py3-none-any.whl"
+    sha256 "c6d23854af798f2471ca3bc653cca394d392cc272fe803d3da9d63575b8445f0"
   end
 
   resource "anyio" do
@@ -71,8 +71,8 @@ class ObservationalMemory < Formula
   end
 
   resource "click" do
-    url "https://files.pythonhosted.org/packages/98/78/01c019cdb5d6498122777c1a43056ebb3ebfeef2076d9d026bfe15583b2b/click-8.3.1-py3-none-any.whl"
-    sha256 "981153a64e25f12d547d3426c367a4857371575ee7ad18df2a6183ab0545b2a6"
+    url "https://files.pythonhosted.org/packages/e4/20/71885d8b97d4f3dde17b1fdb92dbd4908b00541c5a3379787137285f602e/click-8.3.2-py3-none-any.whl"
+    sha256 "1924d2c27c5653561cd2cae4548d1406039cb79b858b747cfea24924bbc1616d"
   end
 
   resource "distro" do
