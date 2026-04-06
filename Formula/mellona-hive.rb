@@ -7,8 +7,8 @@ class MellonaHive < Formula
 
   desc "Git-backed control plane for autonomous agent work"
   homepage "https://github.com/intertwine/hive-orchestrator"
-  url "https://files.pythonhosted.org/packages/ba/e0/d0c81dc3fa96f231a385eb69aefdc1af7484cf0a362b0e2d224b6dca6047/mellona_hive-2.3.2.tar.gz"
-  sha256 "753ed9b93716ecea4d98d48bed7f6c62765ea7202cc79cfbfdd65a7d313f8e43"
+  url "https://files.pythonhosted.org/packages/9a/70/d64e3b9a95da56dd556f1d6ca040cb2e8ea8ff5ad2cc431328bcedcb407d/mellona_hive-2.4.0.tar.gz"
+  sha256 "ba8f052b721a7bb7a137dab2a48378e5f026e15bf70e3df2e14f818d2e495361"
   license "MIT"
 
   depends_on "libyaml"
@@ -31,8 +31,8 @@ class MellonaHive < Formula
   end
 
   resource "charset-normalizer" do
-    url "https://files.pythonhosted.org/packages/1e/1d/4fdabeef4e231153b6ed7567602f3b68265ec4e5b76d6024cf647d43d981/charset_normalizer-3.4.6-cp313-cp313-macosx_10_13_universal2.whl"
-    sha256 "11afb56037cbc4b1555a34dd69151e8e069bee82e613a73bef6e714ce733585f"
+    url "https://files.pythonhosted.org/packages/c1/3b/66777e39d3ae1ddc77ee606be4ec6d8cbd4c801f65e5a1b6f2b11b8346dd/charset_normalizer-3.4.7-cp313-cp313-macosx_10_13_universal2.whl"
+    sha256 "f496c9c3cc02230093d8330875c4c3cdfc3b73612a5fd921c65d39cbcef08063"
   end
 
   resource "hatchling" do
@@ -71,8 +71,8 @@ class MellonaHive < Formula
   end
 
   resource "requests" do
-    url "https://files.pythonhosted.org/packages/56/5d/c814546c2333ceea4ba42262d8c4d55763003e767fa169adc693bd524478/requests-2.33.0-py3-none-any.whl"
-    sha256 "3324635456fa185245e24865e810cecec7b4caf933d7eb133dcde67d48cee69b"
+    url "https://files.pythonhosted.org/packages/d7/8e/7540e8a2036f79a125c1d2ebadf69ed7901608859186c856fa0388ef4197/requests-2.33.1-py3-none-any.whl"
+    sha256 "4e6d1ef462f3626a1f0a0a9c42dd93c63bad33f9f1c1937509b8c5c8718ab56a"
   end
 
   resource "trove-classifiers" do
