@@ -7,8 +7,8 @@ class ObservationalMemory < Formula
 
   desc "Cross-agent observational memory and local search for Claude Code, Codex CLI, and Hermes Agent"
   homepage "https://github.com/intertwine/observational-memory"
-  url "https://files.pythonhosted.org/packages/a8/8b/b4bd618ad0a20ce3a5e1c344eeae206e385ddeeb2ece0a9f78fb62bcdc4c/observational_memory-0.5.0.tar.gz"
-  sha256 "e5b55fe09b24a3eca90c8dd4eb27661988372cdf630a65de358b09ace01c86d9"
+  url "https://files.pythonhosted.org/packages/ce/a2/1d8e5d7ef54fb997ee939e12db83f317bdaa07979f7a5e4d718afbd665a8/observational_memory-0.5.1.tar.gz"
+  sha256 "618ba9dee3648f24cc28856f7314d07e3aac7811b28d6337cfec5fde506afa96"
   license "MIT"
 
   depends_on "jq"
@@ -16,8 +16,8 @@ class ObservationalMemory < Formula
 
   on_arm do
     resource "jiter" do
-      url "https://files.pythonhosted.org/packages/7c/02/be5b870d1d2be5dd6a91bdfb90f248fbb7dcbd21338f092c6b89817c3dbf/jiter-0.13.0-cp313-cp313-macosx_11_0_arm64.whl"
-      sha256 "f556aa591c00f2c45eb1b89f68f52441a016034d18b65da60e2d2875bbbf344a"
+      url "https://files.pythonhosted.org/packages/d6/be/080c96a45cd74f9fce5db4fd68510b88087fb37ffe2541ff73c12db92535/jiter-0.14.0-cp313-cp313-macosx_11_0_arm64.whl"
+      sha256 "4b77da71f6e819be5fbcec11a453fde5b1d0267ef6ed487e2a392fd8e14e4e3a"
     end
 
     resource "numpy" do
@@ -33,8 +33,8 @@ class ObservationalMemory < Formula
 
   on_intel do
     resource "jiter" do
-      url "https://files.pythonhosted.org/packages/91/9c/7ee5a6ff4b9991e1a45263bfc46731634c4a2bde27dfda6c8251df2d958c/jiter-0.13.0-cp313-cp313-macosx_10_12_x86_64.whl"
-      sha256 "1f8a55b848cbabf97d861495cd65f1e5c590246fabca8b48e1747c4dfc8f85bf"
+      url "https://files.pythonhosted.org/packages/97/2a/09f70020898507a89279659a1afe3364d57fc1b2c89949081975d135f6f5/jiter-0.14.0-cp313-cp313-macosx_10_12_x86_64.whl"
+      sha256 "af72f204cf4d44258e5b4c1745130ac45ddab0e71a06333b01de660ab4187a94"
     end
 
     resource "numpy" do
@@ -56,8 +56,8 @@ class ObservationalMemory < Formula
   end
 
   resource "anthropic" do
-    url "https://files.pythonhosted.org/packages/22/ba/9f973f22abb512d5d17428a76e4ecbc8d49b9dd1b5a1152576d48c24dc1d/anthropic-0.89.0-py3-none-any.whl"
-    sha256 "c6d23854af798f2471ca3bc653cca394d392cc272fe803d3da9d63575b8445f0"
+    url "https://files.pythonhosted.org/packages/0c/ac/7185750e8688f6ff79b0e3d6a61372c88b81ba81fcda8798c70598e18aca/anthropic-0.94.0-py3-none-any.whl"
+    sha256 "42550b401eed8fcd7f6654234560f99c428306301bca726d32bca4bfb6feb748"
   end
 
   resource "anyio" do
@@ -106,8 +106,8 @@ class ObservationalMemory < Formula
   end
 
   resource "openai" do
-    url "https://files.pythonhosted.org/packages/2a/9e/5bfa2270f902d5b92ab7d41ce0475b8630572e71e349b2a4996d14bdda93/openai-2.30.0-py3-none-any.whl"
-    sha256 "9a5ae616888eb2748ec5e0c5b955a51592e0b201a11f4262db920f2a78c5231d"
+    url "https://files.pythonhosted.org/packages/66/bc/a8f7c3aa03452fedbb9af8be83e959adba96a6b4a35e416faffcc959c568/openai-2.31.0-py3-none-any.whl"
+    sha256 "44e1344d87e56a493d649b17e2fac519d1368cbb0745f59f1957c4c26de50a0a"
   end
 
   resource "pydantic" do
