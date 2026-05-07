@@ -5,10 +5,10 @@
 class ObservationalMemory < Formula
   include Language::Python::Virtualenv
 
-  desc "Cross-agent observational memory and local search for Claude Code, Codex CLI, and Hermes Agent"
+  desc "Cross-agent observational memory and local search for Claude Code, Codex CLI, Cowork, and Hermes Agent"
   homepage "https://github.com/intertwine/observational-memory"
-  url "https://files.pythonhosted.org/packages/df/9f/4ef8458f2261a5ef1f7451908a6e65b6336c4e537b881ff9704c4faffc1f/observational_memory-0.5.3.tar.gz"
-  sha256 "92fd4b5afea00b9317ae28e09e1e77525c7abc490501b3d78abb9c601ba2ea01"
+  url "https://files.pythonhosted.org/packages/1f/81/07e1a0182694e880929c72ef05c351607e8f367e2bc3a17ba9e37d23d4df/observational_memory-0.5.4.tar.gz"
+  sha256 "0844ef525de206637d2b18c943983f3896becd05722a61b3fa41960432a79005"
   license "MIT"
 
   depends_on "jq"
