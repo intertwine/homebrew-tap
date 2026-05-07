@@ -7,8 +7,8 @@ class ObservationalMemory < Formula
 
   desc "Cross-agent observational memory and local search for Claude Code, Codex CLI, and Hermes Agent"
   homepage "https://github.com/intertwine/observational-memory"
-  url "https://files.pythonhosted.org/packages/59/c8/83ea32aafa363f80ed7aae3383c37125f96a79e004827c8f3a2aba92e38d/observational_memory-0.5.2.tar.gz"
-  sha256 "786e4fb730b536587650d56981679e7c0c7222c6628bd244cea4ae81f225342d"
+  url "https://files.pythonhosted.org/packages/df/9f/4ef8458f2261a5ef1f7451908a6e65b6336c4e537b881ff9704c4faffc1f/observational_memory-0.5.3.tar.gz"
+  sha256 "92fd4b5afea00b9317ae28e09e1e77525c7abc490501b3d78abb9c601ba2ea01"
   license "MIT"
 
   depends_on "jq"
