@@ -5,16 +5,21 @@
 class ObservationalMemory < Formula
   include Language::Python::Virtualenv
 
-  desc "Cross-agent observational memory for local AI coding agents"
+  desc "Cross-agent observational memory and local search for Claude Code, Codex CLI, Cowork, and Hermes Agent"
   homepage "https://github.com/intertwine/observational-memory"
-  url "https://files.pythonhosted.org/packages/68/d8/0b8efd41efdb9e04a95f30ae2bca1d590437863339fbdc221f86e2377a79/observational_memory-0.5.7.tar.gz"
-  sha256 "47f3f176c286d0e72fbcf1dce84841a13ab5ab023a755b6897dfff0a7bbd4eda"
+  url "https://files.pythonhosted.org/packages/d3/4f/630ac5571a6622df00535c92f61f5ab8997a668d956dad61e0ca1651c735/observational_memory-0.6.0.tar.gz"
+  sha256 "846634e52ea3acc4f3826d4565fd0935bf6cf45bf8dbbc990bda72c422012c59"
   license "MIT"
 
   depends_on "jq"
   depends_on "python@3.13"
 
   on_arm do
+    resource "cffi" do
+      url "https://files.pythonhosted.org/packages/4a/d2/a6c0296814556c68ee32009d9c2ad4f85f2707cdecfd7727951ec228005d/cffi-2.0.0-cp313-cp313-macosx_11_0_arm64.whl"
+      sha256 "45d5e886156860dc35862657e1494b9bae8dfa63bf56796f2fb56e1679fc0bca"
+    end
+
     resource "jiter" do
       url "https://files.pythonhosted.org/packages/d6/be/080c96a45cd74f9fce5db4fd68510b88087fb37ffe2541ff73c12db92535/jiter-0.14.0-cp313-cp313-macosx_11_0_arm64.whl"
       sha256 "4b77da71f6e819be5fbcec11a453fde5b1d0267ef6ed487e2a392fd8e14e4e3a"
@@ -32,6 +37,11 @@ class ObservationalMemory < Formula
   end
 
   on_intel do
+    resource "cffi" do
+      url "https://files.pythonhosted.org/packages/4b/8d/a0a47a0c9e413a658623d014e91e74a50cdd2c423f7ccfd44086ef767f90/cffi-2.0.0-cp313-cp313-macosx_10_13_x86_64.whl"
+      sha256 "00bdf7acc5f795150faa6957054fbbca2439db2f775ce831222b66f192f03beb"
+    end
+
     resource "jiter" do
       url "https://files.pythonhosted.org/packages/97/2a/09f70020898507a89279659a1afe3364d57fc1b2c89949081975d135f6f5/jiter-0.14.0-cp313-cp313-macosx_10_12_x86_64.whl"
       sha256 "af72f204cf4d44258e5b4c1745130ac45ddab0e71a06333b01de660ab4187a94"
@@ -56,8 +66,8 @@ class ObservationalMemory < Formula
   end
 
   resource "anthropic" do
-    url "https://files.pythonhosted.org/packages/5d/a0/c775c59ab9445ecabb57ef3d5c24027de060139189a9e312ef9ef889a665/anthropic-0.100.0-py3-none-any.whl"
-    sha256 "1c15769efa15d8fd5c1ebf900e25c57e3ee540f8554a29aa56e4edefffe2951d"
+    url "https://files.pythonhosted.org/packages/87/75/0f6c603594876413bc858a00e7cc0d80a0cc14edf5c7b959a3ea6ec45e44/anthropic-0.102.0-py3-none-any.whl"
+    sha256 "ab96540bbd4b0f36564252d955a86f8abbe4f00944a24bc9931acc9b139bab6f"
   end
 
   resource "anyio" do
@@ -73,6 +83,11 @@ class ObservationalMemory < Formula
   resource "click" do
     url "https://files.pythonhosted.org/packages/ae/44/c1221527f6a71a01ec6fbad7fa78f1d50dfa02217385cf0fa3eec7087d59/click-8.3.3-py3-none-any.whl"
     sha256 "a2bf429bb3033c89fa4936ffb35d5cb471e3719e1f3c8a7c3fff0b8314305613"
+  end
+
+  resource "cryptography" do
+    url "https://files.pythonhosted.org/packages/df/3d/01f6dd9190170a5a241e0e98c2d04be3664a9e6f5b9b872cde63aff1c3dd/cryptography-48.0.0-cp311-abi3-macosx_10_9_universal2.whl"
+    sha256 "0c558d2cdffd8f4bbb30fc7134c74d2ca9a476f830bb053074498fbc86f41ed6"
   end
 
   resource "distro" do
@@ -101,13 +116,18 @@ class ObservationalMemory < Formula
   end
 
   resource "idna" do
-    url "https://files.pythonhosted.org/packages/5d/13/ad7d7ca3808a898b4612b6fe93cde56b53f3034dcde235acb1f0e1df24c6/idna-3.13-py3-none-any.whl"
-    sha256 "892ea0cde124a99ce773decba204c5552b69c3c67ffd5f232eb7696135bc8bb3"
+    url "https://files.pythonhosted.org/packages/d2/23/408243171aa9aaba178d3e2559159c24c1171a641aa83b67bdd3394ead8e/idna-3.15-py3-none-any.whl"
+    sha256 "048adeaf8c2d788c40fee287673ccaa74c24ffd8dcf09ffa555a2fbb59f10ac8"
   end
 
   resource "openai" do
     url "https://files.pythonhosted.org/packages/9d/1c/5d43735b2553baae2a5e899dcbcd0670a86930d993184d72ca909bf11c9b/openai-2.36.0-py3-none-any.whl"
     sha256 "143f6194b548dbc2c921af1f1b03b9f14c85fed8a75b5b516f5bcc11a2a50c63"
+  end
+
+  resource "pycparser" do
+    url "https://files.pythonhosted.org/packages/0c/c3/44f3fbbfa403ea2a7c779186dc20772604442dde72947e7d01069cbe98e3/pycparser-3.0-py3-none-any.whl"
+    sha256 "b727414169a36b7d524c1c3e31839a521725078d7b2ff038656844266160a992"
   end
 
   resource "pydantic" do
