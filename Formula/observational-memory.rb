@@ -5,10 +5,10 @@
 class ObservationalMemory < Formula
   include Language::Python::Virtualenv
 
-  desc "Cross-agent observational memory and local search for Claude Code, Codex CLI, Cowork, and Hermes Agent"
+  desc "Cross-agent observational memory and local search for Claude Code, Codex CLI, Grok Build TUI, Cowork, and Hermes Agent"
   homepage "https://github.com/intertwine/observational-memory"
-  url "https://files.pythonhosted.org/packages/b5/41/cc41cec681bd14d0b8029c8b034fe69f90f9889c68265c41e6ba1586d96b/observational_memory-0.6.2.tar.gz"
-  sha256 "c1e63be2f33e8d714f0324e28309e3e0859d76d1388f124adf36022a9dbcd3ed"
+  url "https://files.pythonhosted.org/packages/33/32/faa0e5a8dd1182b941e53aedcd8a8c605c86d72df66711d989282adeb479/observational_memory-0.6.3.tar.gz"
+  sha256 "8900f97202c76347a155044dfd61fa203459bac4345c2465f22008411ed8374c"
   license "MIT"
 
   depends_on "jq"
@@ -26,8 +26,8 @@ class ObservationalMemory < Formula
     end
 
     resource "numpy" do
-      url "https://files.pythonhosted.org/packages/c1/62/2b7a48fbb745d344742c0277f01286dead15f3f68e4f359fbfcf7b48f70f/numpy-2.4.4-cp313-cp313-macosx_11_0_arm64.whl"
-      sha256 "e823b8b6edc81e747526f70f71a9c0a07ac4e7ad13020aa736bb7c9d67196115"
+      url "https://files.pythonhosted.org/packages/3e/43/87e731299b9408eda705b3b9cb31c7bceb9347d2af9cbb16b2b1e4b5bc0f/numpy-2.4.5-cp313-cp313-macosx_11_0_arm64.whl"
+      sha256 "4603622bdcdbf8dccb1d9d5b21d16a7aa4e473ae6c8e14048d846fd4ca2907a0"
     end
 
     resource "pydantic-core" do
@@ -48,8 +48,8 @@ class ObservationalMemory < Formula
     end
 
     resource "numpy" do
-      url "https://files.pythonhosted.org/packages/14/1d/d0a583ce4fefcc3308806a749a536c201ed6b5ad6e1322e227ee4848979d/numpy-2.4.4-cp313-cp313-macosx_10_13_x86_64.whl"
-      sha256 "08f2e31ed5e6f04b118e49821397f12767934cfdd12a1ce86a058f91e004ee50"
+      url "https://files.pythonhosted.org/packages/e3/a4/fb50657c7cab297bf34edcd60a074cb0647f61771430d6363575274160fe/numpy-2.4.5-cp313-cp313-macosx_10_13_x86_64.whl"
+      sha256 "1ef248460b645c102026b82337cc4e88231909c66dd77b59ec6d6cac7e44f277"
     end
 
     resource "pydantic-core" do
@@ -121,8 +121,8 @@ class ObservationalMemory < Formula
   end
 
   resource "openai" do
-    url "https://files.pythonhosted.org/packages/9d/1c/5d43735b2553baae2a5e899dcbcd0670a86930d993184d72ca909bf11c9b/openai-2.36.0-py3-none-any.whl"
-    sha256 "143f6194b548dbc2c921af1f1b03b9f14c85fed8a75b5b516f5bcc11a2a50c63"
+    url "https://files.pythonhosted.org/packages/ed/4c/bce61680d0699a78a405fd9a67989b175ba020590428831aab2ab1d2be7c/openai-2.37.0-py3-none-any.whl"
+    sha256 "814633888b8f3b1ffd6615697c6e4ef93632d08b7c2e28c8c5ef3556e5a10107"
   end
 
   resource "pycparser" do
