@@ -7,8 +7,8 @@ class ObservationalMemory < Formula
 
   desc "Cross-agent observational memory and local search for Claude Code, Codex CLI, Grok Build TUI, Cowork, and Hermes Agent"
   homepage "https://github.com/intertwine/observational-memory"
-  url "https://files.pythonhosted.org/packages/33/32/faa0e5a8dd1182b941e53aedcd8a8c605c86d72df66711d989282adeb479/observational_memory-0.6.3.tar.gz"
-  sha256 "8900f97202c76347a155044dfd61fa203459bac4345c2465f22008411ed8374c"
+  url "https://files.pythonhosted.org/packages/f7/44/4798014fab9fb60207378ee35e8cae608d8b3477fd5890b194a8236a739c/observational_memory-0.6.4.tar.gz"
+  sha256 "5f9c57efe01e564d627ea49ad26d89d8f57900e9f02ed8c92a483b0488382227"
   license "MIT"
 
   depends_on "jq"
@@ -21,13 +21,13 @@ class ObservationalMemory < Formula
     end
 
     resource "jiter" do
-      url "https://files.pythonhosted.org/packages/d6/be/080c96a45cd74f9fce5db4fd68510b88087fb37ffe2541ff73c12db92535/jiter-0.14.0-cp313-cp313-macosx_11_0_arm64.whl"
-      sha256 "4b77da71f6e819be5fbcec11a453fde5b1d0267ef6ed487e2a392fd8e14e4e3a"
+      url "https://files.pythonhosted.org/packages/86/59/db537c0949e83668c38481d426b9f2fd5ab758c4ee53a811dd0a510626a0/jiter-0.15.0-cp313-cp313-macosx_11_0_arm64.whl"
+      sha256 "d1e7b1776f0797956c509e123d0952d10d293a9492dea9f288ab9570ec01d1a5"
     end
 
     resource "numpy" do
-      url "https://files.pythonhosted.org/packages/3e/43/87e731299b9408eda705b3b9cb31c7bceb9347d2af9cbb16b2b1e4b5bc0f/numpy-2.4.5-cp313-cp313-macosx_11_0_arm64.whl"
-      sha256 "4603622bdcdbf8dccb1d9d5b21d16a7aa4e473ae6c8e14048d846fd4ca2907a0"
+      url "https://files.pythonhosted.org/packages/1b/30/a80189bcc7f5e4258b3fbc3968d909d1756f54d023299ecc39ad6fdb9ef8/numpy-2.4.6-cp313-cp313-macosx_11_0_arm64.whl"
+      sha256 "bf162abab1c1a736333192707cef898e735a5ca00f38f27eeedf44b39d9e85eb"
     end
 
     resource "pydantic-core" do
@@ -43,13 +43,13 @@ class ObservationalMemory < Formula
     end
 
     resource "jiter" do
-      url "https://files.pythonhosted.org/packages/97/2a/09f70020898507a89279659a1afe3364d57fc1b2c89949081975d135f6f5/jiter-0.14.0-cp313-cp313-macosx_10_12_x86_64.whl"
-      sha256 "af72f204cf4d44258e5b4c1745130ac45ddab0e71a06333b01de660ab4187a94"
+      url "https://files.pythonhosted.org/packages/e5/f4/f708c900ecee41b2025ef8413d5351e5649eb2125c506f6720cc69b06f5c/jiter-0.15.0-cp313-cp313-macosx_10_12_x86_64.whl"
+      sha256 "1c11465f97e2abf45a014b83b730222f8f1c5335e802c7055a67d50de6f1f4e3"
     end
 
     resource "numpy" do
-      url "https://files.pythonhosted.org/packages/e3/a4/fb50657c7cab297bf34edcd60a074cb0647f61771430d6363575274160fe/numpy-2.4.5-cp313-cp313-macosx_10_13_x86_64.whl"
-      sha256 "1ef248460b645c102026b82337cc4e88231909c66dd77b59ec6d6cac7e44f277"
+      url "https://files.pythonhosted.org/packages/fb/82/bdab26d7438c6791ca31b7c024ca37c1eab8b726ba236129005cd4a06e45/numpy-2.4.6-cp313-cp313-macosx_10_13_x86_64.whl"
+      sha256 "511dbaf848decaaaf4b4ca48032619fb3138710c4bf7da7617765edad1ef96b0"
     end
 
     resource "pydantic-core" do
@@ -66,8 +66,8 @@ class ObservationalMemory < Formula
   end
 
   resource "anthropic" do
-    url "https://files.pythonhosted.org/packages/87/75/0f6c603594876413bc858a00e7cc0d80a0cc14edf5c7b959a3ea6ec45e44/anthropic-0.102.0-py3-none-any.whl"
-    sha256 "ab96540bbd4b0f36564252d955a86f8abbe4f00944a24bc9931acc9b139bab6f"
+    url "https://files.pythonhosted.org/packages/ad/ec/cf357cf571377a39552c1530390a9b79bbdb6ea463f48fbe4e3624141e3b/anthropic-0.103.1-py3-none-any.whl"
+    sha256 "b9a523fac34e64caf6ee55fdbda213950e6a744b906fce100d34909aad2cd8f4"
   end
 
   resource "anyio" do
@@ -76,13 +76,13 @@ class ObservationalMemory < Formula
   end
 
   resource "certifi" do
-    url "https://files.pythonhosted.org/packages/22/30/7cd8fdcdfbc5b869528b079bfb76dcdf6056b1a2097a662e5e8c04f42965/certifi-2026.4.22-py3-none-any.whl"
-    sha256 "3cb2210c8f88ba2318d29b0388d1023c8492ff72ecdde4ebdaddbb13a31b1c4a"
+    url "https://files.pythonhosted.org/packages/59/8c/57e832b7af6d7c5abe66eb3fbe3a3a32f4d11ea23a1aa7131371035be991/certifi-2026.5.20-py3-none-any.whl"
+    sha256 "3c52e209ba0a4ad7aebe60436a4ab349c39e1e602e8c134221e546902ad25897"
   end
 
   resource "click" do
-    url "https://files.pythonhosted.org/packages/ae/44/c1221527f6a71a01ec6fbad7fa78f1d50dfa02217385cf0fa3eec7087d59/click-8.3.3-py3-none-any.whl"
-    sha256 "a2bf429bb3033c89fa4936ffb35d5cb471e3719e1f3c8a7c3fff0b8314305613"
+    url "https://files.pythonhosted.org/packages/ee/ae/8e92f8058baf87f6c7d86ee7e457668690195cc77efedb8d3797a06e3940/click-8.4.0-py3-none-any.whl"
+    sha256 "40c50b7c6c6adac2823d411041ec84f3f103f1b280d5e9ce0d7f998995832f81"
   end
 
   resource "cryptography" do
