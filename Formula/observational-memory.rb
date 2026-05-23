@@ -7,8 +7,8 @@ class ObservationalMemory < Formula
 
   desc "Cross-agent observational memory and local search for Claude Code, Codex CLI, Grok Build TUI, Cowork, and Hermes Agent"
   homepage "https://github.com/intertwine/observational-memory"
-  url "https://files.pythonhosted.org/packages/f7/44/4798014fab9fb60207378ee35e8cae608d8b3477fd5890b194a8236a739c/observational_memory-0.6.4.tar.gz"
-  sha256 "5f9c57efe01e564d627ea49ad26d89d8f57900e9f02ed8c92a483b0488382227"
+  url "https://files.pythonhosted.org/packages/2f/65/9b4cc9c71668074cbdf9d881d9c93352880f251a4010100d97ce438b8a9f/observational_memory-0.6.5.tar.gz"
+  sha256 "4e7d2e41e3ce9158c19078b31fcb3f7a93002965e8e25cbc9fef990719603b1d"
   license "MIT"
 
   depends_on "jq"
@@ -66,8 +66,8 @@ class ObservationalMemory < Formula
   end
 
   resource "anthropic" do
-    url "https://files.pythonhosted.org/packages/ad/ec/cf357cf571377a39552c1530390a9b79bbdb6ea463f48fbe4e3624141e3b/anthropic-0.103.1-py3-none-any.whl"
-    sha256 "b9a523fac34e64caf6ee55fdbda213950e6a744b906fce100d34909aad2cd8f4"
+    url "https://files.pythonhosted.org/packages/b8/12/d9ab42790494d7c428391a46cd28492395566a6a8ccb138d681978594455/anthropic-0.104.1-py3-none-any.whl"
+    sha256 "35c8cb456f5a4405aafe1f10f03f6fcc54fa51fa8ec01d655cc4b437d120e9b7"
   end
 
   resource "anyio" do
@@ -81,8 +81,8 @@ class ObservationalMemory < Formula
   end
 
   resource "click" do
-    url "https://files.pythonhosted.org/packages/ee/ae/8e92f8058baf87f6c7d86ee7e457668690195cc77efedb8d3797a06e3940/click-8.4.0-py3-none-any.whl"
-    sha256 "40c50b7c6c6adac2823d411041ec84f3f103f1b280d5e9ce0d7f998995832f81"
+    url "https://files.pythonhosted.org/packages/c7/0d/67e5b4109ea4a837e80daa87c2c696711955e40449a97e8926672534def2/click-8.4.1-py3-none-any.whl"
+    sha256 "482be17c6991b8c19c5429a1e995d9b0efdbb63172824c41f99965dc0ade8ec2"
   end
 
   resource "cryptography" do
@@ -116,13 +116,13 @@ class ObservationalMemory < Formula
   end
 
   resource "idna" do
-    url "https://files.pythonhosted.org/packages/d2/23/408243171aa9aaba178d3e2559159c24c1171a641aa83b67bdd3394ead8e/idna-3.15-py3-none-any.whl"
-    sha256 "048adeaf8c2d788c40fee287673ccaa74c24ffd8dcf09ffa555a2fbb59f10ac8"
+    url "https://files.pythonhosted.org/packages/94/16/70255075a9859a0e3adb789b68ceb0e210dec03934245fd98d248226572f/idna-3.16-py3-none-any.whl"
+    sha256 "cc246e3a3f89580c3a951b5ad298ca4638078b2cdd4f115654332b5c26daded5"
   end
 
   resource "openai" do
-    url "https://files.pythonhosted.org/packages/ed/4c/bce61680d0699a78a405fd9a67989b175ba020590428831aab2ab1d2be7c/openai-2.37.0-py3-none-any.whl"
-    sha256 "814633888b8f3b1ffd6615697c6e4ef93632d08b7c2e28c8c5ef3556e5a10107"
+    url "https://files.pythonhosted.org/packages/0a/bf/ccff9be562e24207716d04ef9dc931c76aff0c89a7265da43e2104d7fe06/openai-2.38.0-py3-none-any.whl"
+    sha256 "ec6661c57b2dcc47414a767e6e3335c7ed3d19c9696999283a3c82e95c756a3c"
   end
 
   resource "pycparser" do
